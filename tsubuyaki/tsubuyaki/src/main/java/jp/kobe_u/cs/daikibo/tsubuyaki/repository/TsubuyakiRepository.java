@@ -13,5 +13,5 @@ import jp.kobe_u.cs.daikibo.tsubuyaki.entity.Tsubuyaki;
 public interface TsubuyakiRepository extends CrudRepository<Tsubuyaki, Long>{
 
 
-    List<Tsubuyaki> findByNameContaining(String name);
+    List<Tsubuyaki> findByCommentContaining(String comment);
 }

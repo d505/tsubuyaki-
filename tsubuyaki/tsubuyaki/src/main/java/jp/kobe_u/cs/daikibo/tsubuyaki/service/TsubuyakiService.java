@@ -71,11 +71,11 @@ public class TsubuyakiService {
 
   
     }
-    public Tsubuyaki searchTsubuyaki(String t) {
+    public List<Tsubuyaki> searchTsubuyaki(String t) {
 
-        List<Tsubuyaki> found = repo.findByNameContaining(t);
+        List<Tsubuyaki> found = repo.findByCommentContaining(t);
 
-        return found
+        return found;
 
     }
 
